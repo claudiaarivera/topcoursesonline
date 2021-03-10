@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta tags-->
+    <meta name="title" content="My courses | Top Online Courses">
+    <meta name="description" content="Top Online Courses is an online learning platform..">
+    <!--Normalize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--My styles-->
+    <link rel="stylesheet" href="./styles.css">
+    <!--Google fonts: Montserrat, Merriweather-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!--BoxIcons-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Top Online Courses</title>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <header class="header">
+                <nav class="nav">
+                    <a class="nav__brand" href="/"><img class="logo" src="./images/logo.png" alt="Top Online Courses"></a>
+                    <ul class="nav__list">
+                        <li class="nav__list-item">
+                            <div class="dropdown">
+                                <button id="dropdownBtn" class="btn dropdown__button">
+                                    <span>Explore</span>
+                                    <i class='bx bxs-down-arrow dropdown__icon'></i>
+                                </button>
+                                <ul id="dropdownMenu" class="dropdown__menu">
+                                    <li class="dropdown__menu-item"><a class="dropdown__menu-link" href="">Courses</a></li>
+                                    <li class="dropdown__menu-item"><a class="dropdown__menu-link" href="">Workshops</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__link" href="">Degrees</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__link" href="">Certificates</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__link" href="">Support</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <button class="btn btn--circle">
+                                <i class='bx bx-search btn__icon'></i>
+                            </button>
+                            <button class="btn btn--circle notification">
+                                <i class='bx bx-bell btn__icon'></i>
+                                <span class="notification__count">2</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="main">
+                <h1 class="heading heading--h1">My Courses</h1>
+                <nav class="nav nav--tabs">
+                    <ul id="tabs" class="tabs">
+                        <li class="tab__item">
+                            <a class="tab__link" href="">All courses</a>
+                        </li>
+                        <li class="tab__item">
+                            <a class="tab__link" href="">Current</a>
+                        </li>
+                        <li class="tab__item">
+                            <a class="tab__link" href="">Archived</a>
+                        </li>
+                        <li class="tab__item">
+                            <a class="tab__link" href="">Upcoming</a>
+                        </li>
+                        <li class="tab__item">
+                            <a class="tab__link" href="">Watchlist</a>
+                        </li>
+                    </ul>
+                    <div class="indicator"></div>
+                </nav>
+                <section class="main__content">
+                    <article class="course">
+                        <div class="sticker sticker--gray course__sticker">
+                            <img class="sticker__image" src="./images/woman-technologist-emoji.png" alt="Woman programming">
+                        </div>
+                        <div class="course__description">
+                            <h2 class="heading heading--h2 course__title">E-Learning and Digital Cultures</h2>
+                            <p class="course__date">Feb 4, 2020 - Feb 22, 2020</p>
+                        </div>
+                        <div class="course__score">
+                            <img src="./images/fire-icon.png" alt="fire">
+                            <p class="course__score-count">8.7</p>
+                        </div>
+                        <button class="btn btn--big btn--secondary">view course</button>
+                    </article>
+                    <article class="course">
+                        <div class="sticker sticker--gray">
+                            <img class="sticker__image" src="./images/man-technologist-emoji.png" alt="Woman programming">
+                        </div>
+                        <div class="course__description">
+                            <h2 class="heading heading--h2 course__title">Principles computing <span class="course__title-part">(Part 1)</span></h2>
+                            <p class="course__status course__status--completed"><i class='bx bxs-check-circle'></i> completed</p>
+                        </div>
+                        <p class="course__rate">rate</p>
+                        <button class="btn btn--big btn--light">certificated</button>
+                    </article>
+                </section>
+            </main>
+            <aside class="aside">
+                <section id="chat" class="chat">
+                    <div class="chat__bubble">
+                        <p class="chat__user">Ewan Aguilar</p>
+                        <p class="chat__text">Hey.🙋🏻‍♂️ Yosef did you get the grape juice out?🍇</p>
+                        <p class="chat__time">2 min</p>
+                    </div>
+                    <div class="chat__actions">     
+                        <button id="btnCloseChat" class="btn btn--circle chat__button chat__button--close"><i class='bx bx-x btn__icon'></i></button>
+                        <button class="btn btn--primary btn--circle chat__button chat__button--send"><i class='bx bxs-paper-plane btn__icon'></i></button>
+                    </div>
+                </section>
+                <section class="information">
+                    <p class="information__text">
+                        <span class="information__text-bold">40 million learners</span> <br/> around the world
+                    </p>
+                </section>
+                <section class="related-course">
+                    <div class="related-course__top">
+                        <div class="sticker sticker--skyblue related-course__sticker">
+                            <img class="sticker__image" src="./images/robot-emoji.png" alt="Robot">
+                        </div>
+                        <div class="related-course__info">
+                            <h4 class="heading heading--h4 related-course__title">Machine Learing</h4>
+                            <p class="related-course__duration">Course 3, Week 2</p>
+                            <p class="related-course__date">Feb 7 - Feb 14</p>
+                        </div>
+                    </div>
+                    <div class="related-course__progress">
+                        <div class="circle-progress">
+                            <!---->
+                        </div>
+                    </div>
+                    <div class="related-course__card advise">
+                        <h5 class="advise__title">Need More Time?</h5>
+                        <p class="advise__text">You can enroll in the next session</p>
+                        <a href="#" class="advise__link">Switch session</a>
+                    </div>
+                </section>
+            </aside>
+        </div>
+        <aside class="sidebar">
+            <div class="sidebar__wrapper">
+                <ul class="sidebar__list">
+                    <li class="sidebar__list-item">
+                        <button class="btn sidebar__list-button"><i class='bx bx-calendar-alt btn__icon'></i></button>
+                    </li>
+                    <li class="sidebar__list-item">
+                        <button class="btn sidebar__list-button"><i class='bx bx-message-detail btn__icon'></i></button>
+                    </li>
+                    <li class="sidebar__list-item">
+                        <button class="btn sidebar__list-button"><i class='bx bx-shopping-bag btn__icon' ></i></button>
+                    </li>
+                    <li class="sidebar__list-item sidebar__list-item--right">
+                        <button class="btn sidebar__list-button"><i class='bx bx-log-out btn__icon'></i></button>
+                    </li>
+                </ul>
+                <section class="profile">
+                    <img class="profile__avatar" src="./images/avatar.png" alt="Foto de perfil de Yosef Dowling">
+                    <h3 class="profile__name heading heading--h3">Yosef Dowling</h3>
+                    <p class="tag tag--primary">Software engineer</p>
+                </section>
+                <section class="sidebar__overview">
+                    <article class="sidebar__card">
+                        <p class="sidebar__card-title">Courses Completed</p>
+                        <span class="sidebar__card-count">16</span>
+                    </article> 
+                    <article class="sidebar__card">
+                        <p class="sidebar__card-title">Certificates Earned</p>
+                        <span class="sidebar__card-count">14</span>
+                    </article> 
+                    <article class="sidebar__card">
+                        <p class="sidebar__card-title">Courses In Progress</p>
+                        <span class="sidebar__card-count">8</span>
+                    </article> 
+                    <article class="sidebar__card">
+                        <p class="sidebar__card-title">Forum Discussions</p>
+                        <span class="sidebar__card-count">26</span>
+                    </article> 
+                </section>
+                <hr>
+                <section class="sidebar__messages">
+                    <article class="message">
+                        <img class="message__avatar" src="./images/andres-brixen.jpg" alt="Foto de Andrés Brixen">
+                        <div class="message__content">
+                            <h4 class="message__author"><span class="heading">Andrés</span> <span class="message__author-rol">Manager</span></h4>
+                            <p class="message__text">
+                                What does personal development
+                            </p>
+                            <p class="message__tag">In: personal development</p>
+                        </div>
+                    </article>
+                    <article class="message">
+                        <img class="message__avatar" src="./images/bonnie-riley.jpg" alt="Foto de Bonnie Riley">
+                        <div class="message__content">
+                            <h4 class="message__author">Bonnie <span class="message__author-rol">Member</span></h4>
+                            <p class="message__text">
+                                What does personal development
+                            </p>
+                            <p class="message__tag">In: Help and Questions</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </aside>
+    </div>
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
